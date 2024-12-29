@@ -349,7 +349,6 @@ class CameraxManager(
 
     suspend fun capturePhoto() {
         val photo = mPreviewView.bitmap
-       // val fileUri = Uri.fromFile(imageCaptureBuilder.takePhoto(cameraExecutor))
         withContext(Dispatchers.IO){
             if (photo != null) {
                 sendPhotoCaptureResult(
