@@ -1,6 +1,7 @@
 package de.yanneckreiss.cameraxtutorial.ui.features.camera.photo_capture
 
 import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import de.yanneckreiss.cameraxtutorial.data.usecases.SavePhotoToGalleryUseCase
@@ -8,6 +9,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import org.koin.android.annotation.KoinViewModel
+import java.io.ByteArrayOutputStream
 
 @KoinViewModel
 class CameraViewModel(
@@ -25,7 +27,7 @@ class CameraViewModel(
     }
 
     private fun updateCapturedPhotoState(updatedPhoto: Bitmap?) {
-        _state.value.capturedImage?.recycle()
+       // _state.value.capturedImage?.recycle()
         _state.value = _state.value.copy(capturedImage = updatedPhoto)
     }
 

@@ -74,13 +74,19 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
 
     //// CAMERA STUFF ////
+    implementation "androidx.camera:camera-core:$camerax_version"
     implementation "androidx.camera:camera-camera2:$camerax_version"
     implementation "androidx.camera:camera-lifecycle:$camerax_version"
     implementation "androidx.camera:camera-view:$camerax_version"
     implementation "androidx.camera:camera-extensions:$camerax_version"
 
+    implementation "com.google.mlkit:barcode-scanning:17.3.0"
+
     //// ACCOMPANIST ////
     implementation "com.google.accompanist:accompanist-permissions:$accompanist_version"
+
+    implementation ("jp.co.cyberagent.android:gpuimage:2.1.0")
+    implementation("com.github.moyuruaizawa:cropify:0.5.0")
 
     ////DEPENDENCY INJECTION////
     ////KOIN BASE////
