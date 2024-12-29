@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'de.yanneckreiss.cameraxtutorial'
+    namespace 'de.rehmann.camerax'
     compileSdk 34
 
     defaultConfig {
-        applicationId "de.yanneckreiss.cameraxtutorial"
+        applicationId "de.rehmann.camerax"
         minSdk 28
         targetSdk 34
         versionCode 1
